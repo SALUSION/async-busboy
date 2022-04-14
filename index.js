@@ -76,7 +76,7 @@ module.exports = function (request, options) {
 		function cleanup() {
 			busboy.removeListener('field', onField);
 			busboy.removeListener('file', customOnFile || onFile);
-			busboy.removeListener('close', cleanup);
+			// busboy.removeListener('close', cleanup);
 			busboy.removeListener('end', cleanup);
 			busboy.removeListener('error', onEnd);
 			busboy.removeListener('partsLimit', onEnd);
