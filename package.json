@@ -1,5 +1,5 @@
 {
-  "name": "async-busboy",
+  "name": "@moojig/async-busboy",
   "version": "1.0.1",
   "description": "Promise based multipart form parser",
   "main": "index.js",
@@ -18,9 +18,12 @@
     "file-upload"
   ],
   "author": "Emanuel Chappat <emmanuel.chappat@gmail.com>",
+  "contributors": [
+    "Moojig B. Chimid <me@moojig.dev>"
+  ],
   "license": "MIT",
   "dependencies": {
-    "busboy": "^0.3.1"
+    "@fastify/busboy": "^1.0.0"
   },
   "devDependencies": {
     "expect": "^1.13.4",
