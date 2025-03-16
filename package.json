@@ -1,5 +1,5 @@
 {
-  "name": "@moojig/async-busboy",
+  "name": "@salusion/async-busboy",
   "version": "1.0.2",
   "description": "Promise based multipart form parser",
   "main": "index.js",
@@ -19,7 +19,8 @@
   ],
   "author": "Emanuel Chappat <emmanuel.chappat@gmail.com>",
   "contributors": [
-    "Moojig B. Chimid <me@moojig.dev>"
+    "Moojig B. Chimid <me@moojig.dev>",
+    "Salusion <info@salusion.com>"
   ],
   "license": "MIT",
   "dependencies": {
