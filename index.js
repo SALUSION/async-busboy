@@ -25,8 +25,15 @@ module.exports = function (request, options) {
 			.on('field', onField.bind(null, fields))
 			.on('file', customOnFile || onFile.bind(null, filePromises))
 			.on('error', onError)
-			.on('end', onEnd)
-			.on('finish', onEnd);
+			.on('finish', () => {
+				// console.log("🔥🔥🔥 Busboy 'finish' event triggered! 🔥🔥🔥");
+				onEnd();
+			})
+			.on('end', () => {
+				// console.log("🔥🔥🔥 Busboy 'end' event triggered! 🔥🔥🔥");
+			});
+//			.on('end', onEnd)
+//			.on('finish', onEnd);
 
 		busboy.on('partsLimit', function () {
 			const err = new Error('Reach parts limit');
